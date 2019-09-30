@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="N1uL">
 <meta property="og:description" content="一、如何批量刷src？1、w8scan扫描器（模仿bugscan）   python扫描器需要大量的库   这个只需要扫描器自带的库 2、w9scan扫描器（扫描功能增强，目前可以用）   这个扫描器带有1200+种插件，其中其他插件是从www插件中调用的。   这个扫描器爬虫插件很弱，都是内置库，都是基础的爬虫，没有模拟网页、调用js、没有从网页源码中抓取链接的爬虫。   w9scan也不可能获">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-16T15:31:39.631Z">
+<meta property="og:updated_time" content="2019-09-29T12:51:43.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="批量src工具思路">
 <meta name="twitter:description" content="一、如何批量刷src？1、w8scan扫描器（模仿bugscan）   python扫描器需要大量的库   这个只需要扫描器自带的库 2、w9scan扫描器（扫描功能增强，目前可以用）   这个扫描器带有1200+种插件，其中其他插件是从www插件中调用的。   这个扫描器爬虫插件很弱，都是内置库，都是基础的爬虫，没有模拟网页、调用js、没有从网页源码中抓取链接的爬虫。   w9scan也不可能获">
@@ -322,7 +322,7 @@
         <h3 id="一、如何批量刷src？"><a href="#一、如何批量刷src？" class="headerlink" title="一、如何批量刷src？"></a>一、如何批量刷src？</h3><h4 id="1、w8scan扫描器（模仿bugscan）"><a href="#1、w8scan扫描器（模仿bugscan）" class="headerlink" title="1、w8scan扫描器（模仿bugscan）"></a>1、w8scan扫描器（模仿bugscan）<br></h4><p>   python扫描器需要大量的库<br><br>   这个只需要扫描器自带的库<br></p>
 <h4 id="2、w9scan扫描器（扫描功能增强，目前可以用）"><a href="#2、w9scan扫描器（扫描功能增强，目前可以用）" class="headerlink" title="2、w9scan扫描器（扫描功能增强，目前可以用）"></a>2、w9scan扫描器（扫描功能增强，目前可以用）<br></h4><p>   这个扫描器带有1200+种插件，其中其他插件是从www插件中调用的。<br><br>   这个扫描器爬虫插件很弱，都是内置库，都是基础的爬虫，没有模拟网页、调用js、没有从网页源码中抓取链接的爬虫。<br><br>   w9scan也不可能获取太多了url做以分析。<br><br>   w9scan的插件库一直在丰富。慢慢地w9scan慢慢变成了信息收集地工具。<br><br>   现在的话，可以使用第三方的库，使用docker就ok！<br></p>
 <h4 id="3、w10scan扫描器（批量扫描漏洞，全自动扫描）"><a href="#3、w10scan扫描器（批量扫描漏洞，全自动扫描）" class="headerlink" title="3、w10scan扫描器（批量扫描漏洞，全自动扫描）"></a>3、w10scan扫描器（批量扫描漏洞，全自动扫描）<br></h4><p>   信息收集批量的更加好。<br><br>   目前只处于想法阶段<br><br>   w10scan目标喂大量url<br><br>   github链接地址:<a href="https://github.com/boy-hack/w10scan" target="_blank" rel="noopener">https://github.com/boy-hack/w10scan</a><br><br>   w10scan扫描一些通用的漏洞-&gt;自动扫漏洞来挖src。<br><br>   开发原理：批量扫漏洞，网络并发，漏洞插件的编写。<br><br>   可以把漏洞报告上传到网页上，优化字典传到网页上，然后下发。<br></p>
-<h4 id="4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）"><a href="#4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）" class="headerlink" title="4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）"></a>4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）<br></h4><p>   通过一些路径判断指纹(cms)，但是指纹一多，效率会变低。<br><br>   深度学习来识别指纹，效果也不太好。<br><br>   三种识别方式：关键字、正则、md5。<br><br>   操作：新增任务，粘贴url。<br></p>
+<h4 id="4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）"><a href="#4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）" class="headerlink" title="4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）"></a>4、w11scan扫描器（解决w10的向量问题，分布式指纹识别）<br></h4><p>   通过一些路径判断指纹(cms)，但是指纹一多，效率会变低。<br><br>   深度学习来识别指纹，效果也不太好。<br><br>   三种识别方式：关键字、正则、md5。<br><br>   操作：新增任务，粘贴url。<br><br>    <a id="more"></a> </p>
 <h2 id="二、如何将渗透经验转化为工具？？"><a href="#二、如何将渗透经验转化为工具？？" class="headerlink" title="二、如何将渗透经验转化为工具？？"></a>二、如何将渗透经验转化为工具？？</h2><h4 id="1、学习渗透总结"><a href="#1、学习渗透总结" class="headerlink" title="1、学习渗透总结"></a>1、学习渗透总结</h4><p>   学习渗透时，很多地方都是通过参数污染来达到目的。<br><br>   但是一个网站链接那么多，想把它们全部污染的话，效率问题会很低下。<br><br>   所以想起造个轮子，但是脚本小子驾车去远方，怎么就把时间花到造轮子上呢？<br><br>   渗透基础只是我都懂，但是真正渗透一个网站时不知道怎么办？–&gt;用一款工具来帮助完成<br></p>
 <h4 id="2、手工测试太机械、太累了，如何将这些自动化？"><a href="#2、手工测试太机械、太累了，如何将这些自动化？" class="headerlink" title="2、手工测试太机械、太累了，如何将这些自动化？"></a>2、手工测试太机械、太累了，如何将这些自动化？</h4><p>   常见漏洞：<br><br>   1.信息泄露<br><br>   2.错误配置<br><br>   3.前端漏洞<br><br>   4.逻辑漏洞<br><br>   5.弱口令<br><br>   6.web注入漏洞<br><br>   7.文件包含<br><br>   其中大部分类型都可以找到代码利用，利用无外乎是发送payload，然后判断返回包是怎样，用各种算法判断它是否存在。<br></p>
 <h4 id="3、传统扫描器流程"><a href="#3、传统扫描器流程" class="headerlink" title="3、传统扫描器流程"></a>3、传统扫描器流程</h4><p>   1.爬虫<br><br>   2.得到url<br><br>   3.特定的漏洞payload验证<br><br>   4.验证成功-&gt;报告；验证失败-&gt;下一个<br><br>   类似awvs、appscan已经做得足够好了，但是扫描地非常慢。但是慢也有慢地道理，它们会利用它们的规则进行检查。<br><br>   所以这么想，在传统的扫描器上，我们不需要造轮子。因为传统扫描器做得非常好了。<br><br>   兴趣很好去模仿！但如果自己去造一个跟awvs一样的，这也不现实。<br><br>   传统扫描器做的太成熟，我们需要打破常规，根据我们的渗透经验去编写。<br><br>   <br><br>   渗透经验：抽象成编程算法，构成各种各样的规则。<br></p>
@@ -378,8 +378,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/27/诚殷-web公开课0x00/" rel="prev" title="诚殷_web公开课0x00">
-                诚殷_web公开课0x00 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/21/Html基础/" rel="prev" title="Html基础">
+                Html基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -459,7 +459,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -542,7 +542,7 @@
 <script>
     var now = new Date();
     function createtime() {
-        var grt= new Date("07/21/2018 00:00:00");//此处修改你的建站时间或者网站上线时间
+        var grt= new Date("08/21/2019 00:00:00");//此处修改你的建站时间或者网站上线时间
         now.setTime(now.getTime()+250);
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
@@ -748,7 +748,7 @@ setInterval("createtime()",250);
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-z16"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 
 </html>
 
